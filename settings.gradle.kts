@@ -1,1 +1,1 @@
-rootProject.name = "reactive-datasources"
+rootProject.name = "reactive-data-sources"
