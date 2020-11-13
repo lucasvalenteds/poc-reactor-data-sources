@@ -22,10 +22,6 @@ configure<JavaPluginConvention> {
 tasks.withType<Test> {
     useJUnitPlatform()
     testLogging {
-        events = setOf(
-                TestLogEvent.PASSED,
-                TestLogEvent.FAILED,
-                TestLogEvent.SKIPPED
-        )
+        events = setOf(TestLogEvent.PASSED, TestLogEvent.FAILED, TestLogEvent.SKIPPED)
     }
 }
