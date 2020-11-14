@@ -1,4 +1,4 @@
-# Reactive Data Sources
+# POC: Reactor Data Sources
 
 It demonstrates how to handle multiple data sources using a reactive approach.
 

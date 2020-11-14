@@ -1,1 +1,1 @@
-rootProject.name = "reactive-data-sources"
+rootProject.name = "poc-reactor-data-sources"
