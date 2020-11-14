@@ -63,8 +63,8 @@ class MainTest {
     @RepeatedTest(value = 10, name = "Remote returns when data is not cached and available locally ({currentRepetition})")
     void testRemote() {
         DataSource api = new DataSourceRemote(fixtures);
-        DataSource database = new DataSourceLocal(Flux.empty());
-        DataSource cache = new DataSourceCache(Flux.empty());
+        DataSource database = new DataSourceLocal(Flux.just(chair, table));
+        DataSource cache = new DataSourceCache(Flux.just(table));
 
         Flux<DataSourceResult> source = Flux.concat(
             cache.findItemById(piano.getId()),
